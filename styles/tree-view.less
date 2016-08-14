@@ -5,37 +5,74 @@ atom-workspace {
   }
 
   .tree-view {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    // font-size:40%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     overflow: visible;
-    & .directory {
-      &::before {
-        display: none!important;
-      }
-    }
-    & > .directory {
-      & > .header {
-        line-height: @tab-height;
-        width: 100%;
-        height: @tab-height;
-        padding-top: @component-padding/2;
-        z-index: 2000;
-        font-weight: bold;
-        color: @text-color-highlight;
-        overflow: visible;
-        &::before {
-          visibility: hidden;
+    // & .directory {
+    //   &::before {
+    //     display: none!important;
+    //   }
+    // }
+    // & > .directory {
+    //   & > .header {
+    //     line-height: @tab-height;
+    //     width: 100%;
+    //     height: @tab-height;
+    //     padding-top: @component-padding/2;
+    //     z-index: 2000;
+    //     font-weight: bold;
+    //     color: @text-color-highlight;
+    //     overflow: visible;
+    //     &::before {
+    //       visibility: hidden;
+    //     }
+    //   }
+    //   & > .entries {
+    //     padding-bottom: @component-padding;
+    //   }
+    // }
+    // & > .directory:not(:first-child) {
+    //   & > .header {
+    //     border-top: 1px solid @base-border-color;
+    //   }
+    // }
+    &:not(:hover){
+        li{
+            &.collapsed, &.project-root > ol > .file > span{
+                opacity:0.30;
+            }
         }
-      }
-      & > .entries {
-        padding-bottom: @component-padding;
-      }
     }
-    & > .directory:not(:first-child) {
-      & > .header {
-        border-top: 1px solid @base-border-color;
+
+  }
+
+  .list-group li:not(.list-nested-item),
+  .list-tree li:not(.list-nested-item),
+  .list-group li.list-nested-item > .list-item,
+  .list-tree li.list-nested-item > .list-item {
+    line-height:16px;
+  }
+  .list-group .selected:before,
+  .list-tree .selected:before {
+    height:16px;
+  }
+  .list-tree.has-collapsable-children
+  .list-nested-item > .list-tree > li,
+  .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+    padding-left:8px;
+  }
+  .hide-tree-items{
+      .tree-view{
+          &:not(:hover){
+              li{
+                  &.collapsed, &.project-root > ol > .file > span{
+                      opacity:0.15;
+                  }
+              }
+          }
       }
-    }
   }
 }

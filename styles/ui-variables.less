@@ -75,6 +75,7 @@
 @tab-bar-background-color:    @tool-panel-background-color;
 @tab-bar-border-color:        @tool-panel-border-color;
 @tab-background-color:        @tool-panel-background-color;
+@tab-background-color-hover:  mix(@tool-panel-background-color, @base-background-color, 50%);
 @tab-background-color-active: @base-background-color;
 @tab-border-color:            transparent;
 
@@ -97,7 +98,7 @@
 
 
 // Sizes -----------------------------------------------------------------------
-@font-size:       13px;
+@font-size:       12px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -108,9 +109,12 @@
 @component-line-height:   24px;
 @component-border-radius: 4px;
 
-@tab-height: 32px;
+@tab-height: 28px;
 @tab-bar-height: @tab-height + @component-padding;
+// @tab-bar-height: @tab-height + 2px;
 
 // Other -----------------------------------------------------------------------
 @font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 @transition-time: 200ms;
+
+@white: rgba(255, 255, 255, 1);

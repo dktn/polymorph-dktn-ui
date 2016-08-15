@@ -1,31 +1,25 @@
-atom-panel {
+@import "ui-mixins";
+@import "ui-variables";
+
+.panel {
+  &.bordered {
+    border: 1px solid @base-border-color;
+    border-radius: @component-border-radius;
+  }
+}
+
+atom-panel,
+.tool-panel {
+  position: relative;
+
+  background: @tool-panel-background-color;
+}
+
+atom-panel.bottom {
+  background: darken(@app-background-color, 3%);
   .text(normal);
-  background: @tool-panel-background-color;
 
-  &.left:not(:empty) {
-    border-right: 1px solid @tool-panel-border-color;
-    border-top: 1px solid @base-border-color;
-    margin-top: @tab-bar-height;
+  .inline-block {
+    padding: 0 5px;
   }
-
-  &.right:not(:empty) {
-    border-left: 1px solid @tool-panel-border-color;
-    border-top: 1px solid @base-border-color;
-    margin-top: @tab-bar-height;
-  }
-  &.top:not(:empty) {
-    border-bottom: 0;
-  }
-  &.bottom:not(:empty) {
-    border-top: 1px solid @tool-panel-border-color;
-  }
-}
-atom-panel-container {
-  background: @tool-panel-background-color;
-  border: 0;
-}
-
-.focusable-panel,
-.item-views .focusable-panel {
-  padding: @component-padding;
 }

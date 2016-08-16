@@ -104,10 +104,12 @@
 @tree-view-background-color: @background-dktn;
 @tree-view-border-color:     @base-border-color;
 
-@scrollbar-background-color:        @app-background-color; // Needs to be opaque
-@scrollbar-color:                   rgba(92, 92, 92, 0.5);
-@scrollbar-background-color-editor: fadein(@app-background-color, 10%);
-@scrollbar-color-editor:            fadein(rgba(92, 92, 92, 0.5), 10%);
+// @scrollbar-background-color:        @app-background-color; // Needs to be opaque
+// @scrollbar-color:                   rgba(92, 92, 92, 0.5);
+@scrollbar-background-color:        @background-dktn; // Needs to be opaque
+@scrollbar-color:                   @background-light-dktn;
+@scrollbar-background-color-editor: fadein(@scrollbar-background-color, 10%);
+@scrollbar-color-editor:            fadein(@scrollbar-color, 10%);
 
 @tooltip-text-color:           @text-color-highlight;
 @tooltip-background-color:     @background-color-highlight;

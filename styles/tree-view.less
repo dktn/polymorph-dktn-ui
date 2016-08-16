@@ -6,10 +6,10 @@ atom-workspace {
 
   .tree-view {
     // font-size:40%;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left:   4px;
+    padding-right:  4px;
+    padding-top:    6px;
+    padding-bottom: 2px;
     overflow: visible;
     // & .directory {
     //   &::before {
@@ -64,15 +64,5 @@ atom-workspace {
   .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
     padding-left:8px;
   }
-  .hide-tree-items{
-      .tree-view{
-          &:not(:hover){
-              li{
-                  &.collapsed, &.project-root > ol > .file > span{
-                      opacity:0.15;
-                  }
-              }
-          }
-      }
-  }
+
 }

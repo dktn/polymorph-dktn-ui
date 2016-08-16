@@ -5,15 +5,20 @@
 
 @base-background-color: @bg-shade-two;
 @base-border-color:     @bg-shade-five;
-@base-selection-color:  @bg-shade-one;
+@base-selection-color:  @background-vlight-dktn;
+// @base-selection-color:  @bg-shade-one;
 @base-input-color:      @bg-shade-one;
 
-@overlay-shadow-color: rgba(0, 0, 0, 0.2);
-@input-shadow-color:   rgba(0, 0, 0, 0.4);
+@overlay-shadow-color: rgba(40, 45, 51, 0.02);
+@input-shadow-color:   rgba(40, 45, 51, 0.04);
+// @overlay-shadow-color: rgba(0, 0, 0, 0.2);
+// @input-shadow-color:   rgba(0, 0, 0, 0.4);
 
 // Text ------------------------------------------------------------------------
 @text-color:           @fg-shade-two;
 @text-color-subtle:    @fg-shade-one;
+// @text-color-highlight: @background-vvvlight-dktn;
+// @text-color-selected:  @background-vvlight-dktn;
 @text-color-highlight: @fg-shade-three;
 @text-color-selected:  @text-color-highlight;
 
@@ -38,15 +43,24 @@
 @background-color-selected:  @base-selection-color;
 
 
+@background-dktn:           #282d33;
+@background-light-dktn:     #2b3036;
+@background-vlight-dktn:    #343a41;
+@background-vlight2-dktn:   #393f47;
+@background-vvlight-dktn:   #424952;
+@background-vvvlight-dktn:  lighten(@background-vvlight-dktn, 10%);
+@background-vvvvlight-dktn: lighten(@background-vvvlight-dktn, 10%);
+
 // Editor ----------------------------------------------------------------------
 // @indent-guide-color: @bg-shade-two;
 // @invisibles-color: @bg-shade-two;
-// bg for reference: #282d33
-@indent-guide-color: #2b3036;
-@invisibles-color:   #2b3036;
+@indent-guide-color: @background-light-dktn;
+@invisibles-color:   @background-light-dktn;
 
 @gutter-background-color: transparent;
-@gutter-text-color: @text-color-subtle;
+@gutter-text-color:          @background-vvvlight-dktn;
+// @gutter-text-color-selected: lighten(@background-vvlight-dktn, 10%);
+// @gutter-text-color: @text-color-subtle;
 @gutter-text-color-selected: @text-color-selected;
 
 
@@ -57,7 +71,8 @@
 @input-background-color: @base-background-color;
 @input-border-color:     @base-border-color;
 
-@tool-panel-background-color: @bg-shade-four;
+@tool-panel-background-color: @background-vlight-dktn;
+// @tool-panel-background-color: @bg-shade-four;
 @tool-panel-border-color:     @bg-shade-five;
 
 @inset-panel-background-color: #161719;
@@ -75,14 +90,18 @@
 @button-background-color-selected: @bg-shade-two;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @tool-panel-background-color;
-@tab-bar-border-color:        @tool-panel-border-color;
-@tab-background-color:        @tool-panel-background-color;
-@tab-background-color-hover:  mix(@tool-panel-background-color, @base-background-color, 50%);
-@tab-background-color-active: @base-background-color;
+// @tab-bar-background-color:    @tool-panel-background-color;
+// @tab-bar-border-color:        @tool-panel-border-color;
+// @tab-background-color:        @tool-panel-background-color;
+// @tab-background-color-active: @base-background-color;
+@tab-bar-background-color:    @background-dktn;
+@tab-bar-border-color:        @background-light-dktn;
+@tab-background-color:        @background-vlight-dktn;
+@tab-background-color-active: @background-dktn;
+@tab-background-color-hover:  mix(@tab-background-color, @tab-background-color-active, 50%);
 @tab-border-color:            transparent;
 
-@tree-view-background-color: @bg-shade-two;
+@tree-view-background-color: @background-dktn;
 @tree-view-border-color:     @base-border-color;
 
 @scrollbar-background-color: @app-background-color; // Needs to be opaque

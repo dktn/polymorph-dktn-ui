@@ -20,8 +20,6 @@
 @text-color:           @fg-shade-three;
 // @text-color:           @fg-shade-two;
 @text-color-subtle:    @fg-shade-one;
-// @text-color-highlight: @background-vvvlight-dktn;
-// @text-color-selected:  @background-vvlight-dktn;
 @text-color-highlight: @fg-shade-three;
 @text-color-selected:  @text-color-highlight;
 
@@ -36,7 +34,6 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed:  @text-color-error;
 
-
 // Background-------------------------------------------------------------------
 @background-color-info:      @color-info;
 @background-color-success:   @color-success;
@@ -44,7 +41,6 @@
 @background-color-error:     @color-error;
 @background-color-highlight: @bg-shade-five;
 @background-color-selected:  @base-selection-color;
-
 
 @background-dktn:           shade(@theme-color, 75%); // 160 180 204
 @background-light-dktn:     shade(@theme-color, 72%);
@@ -63,17 +59,12 @@
 @text-color-vdark-dktn:     shade(@text-color-dktn, 50%);
 
 // Editor ----------------------------------------------------------------------
-// @indent-guide-color: @bg-shade-two;
-// @invisibles-color: @bg-shade-two;
 // @indent-guide-color: @background-light-dktn;
 // @invisibles-color:   @background-light-dktn;
 
 @gutter-background-color: transparent;
-// @gutter-text-color-selected: lighten(@background-vvlight-dktn, 10%);
-// @gutter-text-color: @text-color-subtle;
-@gutter-text-color:          @text-color-vdark-dktn;
+// @gutter-text-color:          @text-color-vdark-dktn;
 @gutter-text-color-selected: @text-color-selected;
-
 
 // Components ------------------------------------------------------------------
 @pane-item-background-color: @app-background-color;
@@ -101,10 +92,6 @@
 @button-background-color-selected: @bg-shade-two;
 @button-border-color:              @base-border-color;
 
-// @tab-bar-background-color:    @tool-panel-background-color;
-// @tab-bar-border-color:        @tool-panel-border-color;
-// @tab-background-color:        @tool-panel-background-color;
-// @tab-background-color-active: @base-background-color;
 @tab-bar-background-color:    @background-dktn;
 @tab-bar-border-color:        @background-light-dktn;
 @tab-background-color:        @background-vlight-dktn;
@@ -115,8 +102,6 @@
 @tree-view-background-color: @background-dktn;
 @tree-view-border-color:     @base-border-color;
 
-// @scrollbar-background-color:        @app-background-color; // Needs to be opaque
-// @scrollbar-color:                   rgba(92, 92, 92, 0.5);
 @scrollbar-background-color:        @background-dktn; // Needs to be opaque
 @scrollbar-color:                   @background-light-dktn;
 @scrollbar-background-color-editor: fadein(@scrollbar-background-color, 10%);
@@ -148,7 +133,6 @@
 
 // @tab-height: 28px;
 @tab-bar-height: @tab-height + @component-padding;
-// @tab-bar-height: @tab-height + 2px;
 
 // Other -----------------------------------------------------------------------
 @font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;

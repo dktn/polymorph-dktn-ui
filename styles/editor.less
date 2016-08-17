@@ -1,3 +1,6 @@
+@import 'custom-settings';
+
+
 atom-text-editor[mini],
 atom-text-editor[mini]::shadow {
   background-color: @base-input-color;
@@ -98,8 +101,8 @@ atom-text-editor::shadow,
 
       &.cursor-line-no-selection {
         background-color: transparent;
-        color: @text-color-dark-dktn;
-        // color: @text-color-highlight;
+        color: @gutter-text-cursor-color;
+        // color: @text-color-dark-dktn;
       }
 
       .icon-right {

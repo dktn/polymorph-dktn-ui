@@ -1,3 +1,5 @@
+@import 'custom-settings';
+
 atom-workspace {
   .tree-view-resizer {
     background-color: @tree-view-background-color;
@@ -53,11 +55,11 @@ atom-workspace {
   .list-tree li:not(.list-nested-item),
   .list-group li.list-nested-item > .list-item,
   .list-tree li.list-nested-item > .list-item {
-    line-height:16px;
+    line-height: @tree-view-line-height;
   }
   .list-group .selected:before,
   .list-tree .selected:before {
-    height:16px;
+    height: @tree-view-line-height;
   }
   .list-tree.has-collapsable-children
   .list-nested-item > .list-tree > li,

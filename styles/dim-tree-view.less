@@ -20,7 +20,7 @@
         }
 
         .generate-list-item-status-color(@color, @status) {
-            .directory.list-nested-item.status-@{status} .header {
+            .directory.list-nested-item.status-@{status} > .header {
                 color: fade(@color, @ratio * 200%);
             }
             .list-tree {
@@ -33,6 +33,7 @@
                   color: @color;
                 }
             }
+
             .list-tree li.status-@{status} {
                 color: fade(@color, @ratio * 200%);
             }

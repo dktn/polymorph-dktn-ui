@@ -5,6 +5,7 @@
 .hide-idle-tree-items{
 
     .generate-shading(@ratio) {
+        .directory .header,
         .entries .directory .header,
         .list-tree li {
             color:fade(@entry-color, @ratio * 100%);
@@ -19,6 +20,9 @@
         }
 
         .generate-list-item-status-color(@color, @status) {
+            .directory.list-nested-item.status-@{status} .header {
+                color: fade(@color, @ratio * 200%);
+            }
             .list-tree {
                 li:not(.list-nested-item).status-@{status},
                 li.list-nested-item.status-@{status} > .list-item {

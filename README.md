@@ -5,7 +5,7 @@ A minimal UI. Best with [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dk
 ## Features
 
 * Reduced frame boxes and contrast colors
-* Configurable theme color
+* Configurable theme color and tree view size
 * Optionally hiding unused files keeping visible git statuses
 * Changes default Haskell icon color
 

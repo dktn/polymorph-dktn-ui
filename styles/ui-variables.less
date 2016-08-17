@@ -51,6 +51,9 @@
 @background-vvlight-dktn:   #424952;
 @background-vvvlight-dktn:  lighten(@background-vvlight-dktn, 10%);
 @background-vvvvlight-dktn: lighten(@background-vvvlight-dktn, 10%);
+@text-color-dktn:           @text-color;
+@text-color-dark-dktn:      shade(@text-color-dktn, 30%);
+@text-color-vdark-dktn:     shade(@text-color-dktn, 50%);
 
 // Editor ----------------------------------------------------------------------
 // @indent-guide-color: @bg-shade-two;
@@ -59,9 +62,9 @@
 @invisibles-color:   @background-light-dktn;
 
 @gutter-background-color: transparent;
-@gutter-text-color:          @background-vvvlight-dktn;
 // @gutter-text-color-selected: lighten(@background-vvlight-dktn, 10%);
 // @gutter-text-color: @text-color-subtle;
+@gutter-text-color:          @text-color-vdark-dktn;
 @gutter-text-color-selected: @text-color-selected;
 
 

@@ -1,5 +1,6 @@
 @entry-color: @text-color;
 
+
 .hide-idle-tree-items{
     // .list-tree li{
     //     &:after{
@@ -9,23 +10,23 @@
     // }
 
     .tree-view:not(:hover){
-        .entries .directory div:before{
-            opacity:0.2;
-        }
+        // .entries .directory div:before{
+        //     opacity:0.2;
+        // }
 
-        .entries .directory .header .name,
+        .entries .directory .header,
+        // .entries .directory .header .name,
         .entries .directory .header span,
-        .list-tree li .name{
-            // color:@gray !important;
-            // color:lighten(@entry-color,15%);
-            // color:fade(@entry-color,30%);
-            opacity:0.3;
+        // .list-tree li .name {
+        .list-tree li {
+            color:fade(@entry-color,30%);
+            // opacity:0.3;
         }
 
-        .list-tree li.open .name{
-            // color:@text-color-highlight;
-            // color: red;
-            opacity:1;
+        // .list-tree li.open .name{
+        .list-tree li.open {
+            color:@text-color-highlight;
+            // opacity:1;
         }
 
         > .directory > .entries > .directory.list-nested-item{

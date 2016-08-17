@@ -14,9 +14,10 @@ atom-text-editor[mini]::shadow {
   }
 }
 
-@gutter-color-added:    shade(@text-color-added,    20%);
-@gutter-color-modified: shade(@text-color-modified, 20%);
-@gutter-color-removed:  shade(@text-color-removed,  20%);
+@gutter-color-dim: 20%;
+@gutter-color-added:    shade(@text-color-added,    @gutter-color-dim);
+@gutter-color-modified: shade(@text-color-modified, @gutter-color-dim);
+@gutter-color-removed:  shade(@text-color-removed,  @gutter-color-dim);
 
 atom-text-editor,
 atom-text-editor::shadow,

@@ -1,23 +1,22 @@
-# polymorph-ui package
+# Polymorph based Dktn Atom UI theme - polymorph-dktn-ui package
 
-A minimal and shapeshifting interface! The UI adapts to your current syntax colors.
+A minimal UI. Best with [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dktn-syntax).
 
 ## Features
 
-* It's flexible: The UI will search for colors within "syntax-variables.less", it will then use these colors to calculate the UI colors.
-* Works with light and dark syntax colors.
-* Gives a clean and consistent feel.
+* Reduced frame boxes and contrast colors
+* Configurable theme color
+* Optionally hiding unused files keeping visible git statuses
+* Changes default Haskell icon color
 
-#### Dark
-![adventurous](http://i.imgur.com/oqaW46z.png)
+![](./dktn-theme.png)
 
-#### Light
-![monokai-light](http://i.imgur.com/0PbseGA.png)
+## Credits
+
+* [Polymorph UI](https://atom.io/themes/polymorph-ui) - general structure and styles
+* [Climate Atom Theme](https://atom.io/themes/climate-ui) - distraction free mode
 
 #### Addons used in screenshots
 * [minimap](https://atom.io/packages/minimap)
-* [symbols-tree-view](https://atom.io/packages/symbols-tree-view)
 * [file-icons](https://atom.io/packages/file-icons)
-* [toolbar](https://atom.io/packages/toolbar)
-* [adventurous](https://atom.io/packages/adventurous-syntax)
-* [monokai-light](https://atom.io/packages/monokai-light)
+* [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dktn-syntax)

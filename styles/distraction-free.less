@@ -27,6 +27,10 @@
             // opacity:1;
         }
 
+        .list-tree .list-item:not(.open) .icon:before {
+            opacity: 0.3;
+        }
+
         .generate-list-item-status-color(@color, @status) {
             .list-tree {
                 li:not(.list-nested-item).status-@{status},

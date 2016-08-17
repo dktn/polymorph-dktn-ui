@@ -14,6 +14,10 @@ atom-text-editor[mini]::shadow {
   }
 }
 
+@gutter-color-added:    shade(@text-color-added,    20%);
+@gutter-color-modified: shade(@text-color-modified, 20%);
+@gutter-color-removed:  shade(@text-color-removed,  20%);
+
 atom-text-editor,
 atom-text-editor::shadow,
 :host {
@@ -71,18 +75,18 @@ atom-text-editor::shadow,
 
       &.git-line-added {
         font-weight: 600;
-        color: @text-color-added;
-        border-left-color: @text-color-added;
+        color: @gutter-color-added;
+        border-left-color: @gutter-color-added;
       }
       &.git-line-modified {
         font-weight: 600;
-        color: @text-color-modified;
-        border-left-color: @text-color-modified;
+        color: @gutter-color-modified;
+        border-left-color: @gutter-color-modified;
       }
       &.git-line-removed {
         font-weight: 600;
-        color: @text-color-removed;
-        border-left-color: @text-color-removed;
+        color: @gutter-color-removed;
+        border-left-color: @gutter-color-removed;
       }
 
       &.cursor-line {

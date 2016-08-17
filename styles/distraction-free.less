@@ -10,9 +10,14 @@
     //     }
     // }
 
+
     .tree-view:not(:hover){
-        // .entries .directory .header,
-        // .entries .directory .header span,
+        .entries .directory div:before{
+            opacity:0.2;
+        }
+
+        .entries .directory .header .name,
+        .entries .directory .header span,
         .list-tree li .name{
             // color:@gray !important;
             // color:lighten(@entry-color,15%);
@@ -44,7 +49,8 @@
         .tree-view:hover{
             background-color:@white;
 
-            .list-tree li,.entries .directory .header span{
+            .list-tree li,
+            .entries .directory .header span{
                 color: #6783a5;
             }
 

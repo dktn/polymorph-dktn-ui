@@ -1,5 +1,7 @@
 @import "colors";
 
+@import 'custom-settings';
+
 // Base ------------------------------------------------------------------------
 @app-background-color: @bg-shade-two;
 
@@ -44,11 +46,16 @@
 @background-color-selected:  @base-selection-color;
 
 
-@background-dktn:           #282d33;
-@background-light-dktn:     #2b3036;
-@background-vlight-dktn:    #343a41;
-@background-vlight2-dktn:   #393f47;
-@background-vvlight-dktn:   #424952;
+@background-dktn:           shade(@theme-color, 75%); // 160 180 204
+@background-light-dktn:     shade(@theme-color, 72%);
+@background-vlight-dktn:    shade(@theme-color, 67%);
+@background-vlight2-dktn:   shade(@theme-color, 63%);
+@background-vvlight-dktn:   shade(@theme-color, 59%);
+// @background-dktn:           #282d33;
+// @background-light-dktn:     #2b3036; // 43 48 54
+// @background-vlight-dktn:    #343a41; // 52 58 65
+// @background-vlight2-dktn:   #393f47; // 57 63 71
+// @background-vvlight-dktn:   #424952; // 66 73 82
 @background-vvvlight-dktn:  lighten(@background-vvlight-dktn, 10%);
 @background-vvvvlight-dktn: lighten(@background-vvvlight-dktn, 10%);
 @text-color-dktn:           @text-color;

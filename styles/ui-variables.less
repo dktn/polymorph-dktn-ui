@@ -17,10 +17,14 @@
 // @input-shadow-color:   rgba(0, 0, 0, 0.4);
 
 // Text ------------------------------------------------------------------------
-@text-color:           @fg-shade-three;
-// @text-color:           @fg-shade-two;
-@text-color-subtle:    @fg-shade-one;
-@text-color-highlight: @fg-shade-three;
+// #b9b2a6 = lighten(#716858, 30%);
+// @text-color:           #b9b2a6;
+@text-color-subtle:    darken(@text-color, 40%);
+@text-color-highlight: lighten(@text-color, 5%);
+
+// @text-color:           red;  // @fg-shade-three;
+// @text-color-subtle:    cyan; // @fg-shade-one;
+// @text-color-highlight: pink; // @fg-shade-three;
 @text-color-selected:  @text-color-highlight;
 
 @text-color-info:    @color-info;

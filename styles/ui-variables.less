@@ -19,7 +19,7 @@
 // Text ------------------------------------------------------------------------
 // #b9b2a6 = lighten(#716858, 30%);
 // @text-color:           #b9b2a6;
-@text-color-subtle:    darken(@text-color, 35%);
+@text-color-subtle:    darken(@text-color, 20%);
 @text-color-highlight: lighten(@text-color, 5%);
 
 // @text-color:           red;  // @fg-shade-three;
@@ -32,7 +32,8 @@
 @text-color-warning: @color-warning;
 @text-color-error:   @color-error;
 
-@text-color-ignored:  @text-color-subtle;
+@text-color-ignored:  darken(@text-color, 30%);
+// @text-color-ignored:  @text-color-subtle;
 @text-color-added:    @text-color-success;
 @text-color-renamed:  @text-color-info;
 @text-color-modified: @text-color-warning;
@@ -51,11 +52,6 @@
 @background-vlight-dktn:    shade(@theme-color, 67%);
 @background-vlight2-dktn:   shade(@theme-color, 63%);
 @background-vvlight-dktn:   shade(@theme-color, 59%);
-// @background-dktn:           #282d33;
-// @background-light-dktn:     #2b3036; // 43 48 54 2d3239
-// @background-vlight-dktn:    #343a41; // 52 58 65
-// @background-vlight2-dktn:   #393f47; // 57 63 71
-// @background-vvlight-dktn:   #424952; // 66 73 82
 @background-vvvlight-dktn:  lighten(@background-vvlight-dktn, 10%);
 @background-vvvvlight-dktn: lighten(@background-vvvlight-dktn, 10%);
 @text-color-dktn:           @text-color;

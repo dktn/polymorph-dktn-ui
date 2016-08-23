@@ -1,9 +1,12 @@
+@import 'custom-settings';
+
 * {
   box-sizing: border-box;
 }
 
 atom-workspace {
-  background: @tool-panel-background-color;
+  background: @inactive-tab-color; // resize panels handle
+  // background: @tool-panel-background-color;
   font-family: @font-family;
 
   .item-views {

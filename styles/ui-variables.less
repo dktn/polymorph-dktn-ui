@@ -47,7 +47,7 @@
 @background-color-highlight: @bg-shade-five;
 @background-color-selected:  @base-selection-color;
 
-@background-dktn:           shade(@theme-color, 75%); // 160 180 204
+@background-dktn:           shade(@theme-color, 75%); // #282d33, from 160 180 204
 @background-light-dktn:     shade(@theme-color, 72%);
 @background-vlight-dktn:    shade(@theme-color, 67%);
 @background-vlight2-dktn:   shade(@theme-color, 63%);
@@ -92,9 +92,9 @@
 @button-background-color-selected: @bg-shade-two;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @background-dktn;
+@tab-bar-background-color:    @inactive-tab-color; //@background-dktn;
 @tab-bar-border-color:        @background-light-dktn;
-@tab-background-color:        @background-vlight-dktn;
+@tab-background-color:        @inactive-tab-color; //@background-vlight-dktn;
 @tab-background-color-active: @background-dktn;
 @tab-background-color-hover:  mix(@tab-background-color, @tab-background-color-active, 50%);
 @tab-border-color:            transparent;

@@ -6,10 +6,10 @@
 @tab-border: 1px solid @tab-border-color;
 
 @padding-top-close-icon: 5px;
-@dimensions-close-icon: 17px;
+@dimensions-close-icon: 14px;
 
-@top-modified-icon: 9px;
-@left-modified-icon: 11px;
+@top-modified-icon: 11px;
+@left-modified-icon: 9px;
 
 .tab-bar {
   height: @tab-height;
@@ -100,7 +100,8 @@
         display: block;
         width: 100%;
         font-size: 12px;
-        text-align: center;
+        text-align: left;
+        left: 2px;
         line-height: 18px;
       }
     } // close-icon
@@ -195,8 +196,6 @@
   border: none;
   background-color: @text-color;
 }
-
-
 
 // Git status bullets for tabs
 .tab-git-status-bullet {

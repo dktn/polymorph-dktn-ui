@@ -1,14 +1,19 @@
 @import "ui-variables";
 
+@import "custom-settings";
+
 @tab-top-padding: 5px;
 @tab-bottom-border-height: 5px;
 @tab-padding-sides: 6px;
 @tab-border: 1px solid @tab-border-color;
 
-@padding-top-close-icon: 5px;
+@tab-height-base: 28px;
+@tab-height-shift: (@tab-height - @tab-height-base)/2;
+
+@padding-top-close-icon: 5px + @tab-height-shift;
 @dimensions-close-icon: 14px;
 
-@top-modified-icon: 11px;
+@top-modified-icon: 11px + @tab-height-shift;
 @left-modified-icon: 9px;
 
 .tab-bar {

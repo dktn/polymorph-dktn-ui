@@ -1,21 +1,23 @@
 {
-  "name": "polymorph-dktn-ui",
+  "name": "resonance-ui",
   "theme": "ui",
-  "main": "./lib/polymorph-dktn-ui",
-  "version": "1.8.8",
-  "description": "A minimal and shapeshifting interface.",
+  "main": "./lib/resonance-ui",
+  "version": "0.0.0",
+  "description": "A minimal, compact, distraction free interface.",
   "activationCommands": {
-    "atom-workspace": "polymorph-dktn-ui:toggle"
+    "atom-workspace": "resonance-ui:toggle"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dktn/polymorph-dktn-ui"
+    "url": "https://github.com/dktn/resonance-ui"
   },
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.1.0"
   },
-  "dependencies": {},
-  "readme": "# polymorph-ui package\n\nA shapeshifting interface! The UI adapts to your current syntax. It began as an experiment within graphite-ui, but I chose to make a different package for it.\n\n### Features\n\n* Flexible UI - The UI will search for colors within \"syntax-variables.less\", it will then use these colros to calculate the UI colors.\n* Works with light and dark syntax colors.\n\n![Atom Dark](http://i.imgur.com/s8jUg5B.png)\n![Atom Light](http://i.imgur.com/zTi0MgZ.png)\n",
+  "dependencies": {
+    "event-kit": "^0.8.0"
+  },
+  "readme": "# Resonance-UI package\nA minimal, compact, distraction free interface.\n\n![Resonance](https://raw.githubusercontent.com/dktn/resonance-ui/master/dktn-theme.png)\n",
   "readmeFilename": "README.md"
 }

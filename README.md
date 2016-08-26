@@ -1,13 +1,16 @@
-# Polymorph based Dktn Atom UI theme - polymorph-dktn-ui package
+# Resonance Atom UI theme - resonance-ui package
 
-A minimal UI. Best with [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dktn-syntax).
+A minimal UI.
+Compact, distraction free, configurable.
+Best with [resonance-syntax](https://github.com/dktn/resonance-syntax).
 
 ## Features
 
 * Reduced frame boxes and contrast colors
-* Configurable theme color and tree view size
-* Optionally hiding unused files keeping visible git statuses
-* Changes default Haskell icon color
+* Configurable theme colors and various sizes
+* Optionally hidden unused files keeping visible git statuses
+* Auto-reloading on settings change
+* Changed default Haskell icon color
 
 ![](./dktn-theme.png)
 
@@ -19,4 +22,4 @@ A minimal UI. Best with [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dk
 #### Addons used in screenshots
 * [minimap](https://atom.io/packages/minimap)
 * [file-icons](https://atom.io/packages/file-icons)
-* [gruvbox-dktn-syntax](https://github.com/dktn/gruvbox-dktn-syntax)
+* [resonance-syntax](https://github.com/dktn/resonance-syntax)
